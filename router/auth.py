@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordRequestForm
-from typing import Annotated, Optional
+from typing import Annotated
 from pydantic import BaseModel, Field
-from datetime import timedelta, datetime
+from datetime import timedelta
 from models import User
 from dependencies import db_dependency
 from security import bcrypt_context, create_access_token
